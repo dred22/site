@@ -1,17 +1,27 @@
 {% extends 'model.twig.html' %}
 {% block body%}
 	<div class="container fondGeneral">
-		        <h2>Page de test</h2>
-        
-        <p>
-            Cette page contient du code HTML avec des balises PHP.<br />
-            Voici quelques petits tests :
-        </p>
-        
-        <ul>
-        <li class="blue">{{ message }}</li>
-        <li class="red">Texte en rouge</li>
-        <li class="green">Texte en vert</li>
-        </ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Page de test</h2>
+		        
+		        <p>
+		            Cette page contient du code HTML avec des balises PHP.<br />
+		            Voici quelques petits tests :
+		        </p>
+		        
+		        <ul>
+		        <li class="blue">{{ message }}</li>
+		        <li class="red">Texte en rouge</li>
+		        <li class="green">Texte en vert</li>
+		        </ul>
+	        </div>
+		</div>
+		<div class="row">
+			<form class="form">
+				<label for="message">Taper là votre message</label>
+				<input id="message" type="text" name="message" />
+			</form>
+		</div>
 	</div>
 {% endblock %}

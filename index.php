@@ -6,7 +6,12 @@ $twig = new Twig_Environment($loader, array(
 	'cache' => false
 ));
 $template = $twig->loadTemplate('pageBootstrap.twig.html');
+if (isset($_GET['message'])){
+	$message = $_GET['message'];
+} else {
+	$message = 'Hello world';
+}
 echo $template->render(array(
-	'titre' => 'Twig page','bootstrap'=>'ok'
+	'titre' => 'Twig page','bootstrap'=>'ok', 'message'=>$message
     ));
 ?>
