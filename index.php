@@ -5,8 +5,8 @@ $loader = new Twig_Loader_Filesystem('view'); // Dossier contenant les templates
 $twig = new Twig_Environment($loader, array(
 	'cache' => false
 ));
-$template = $twig->loadTemplate('model.twig.html');
+$template = $twig->loadTemplate('pageBootstrap.twig.html');
 echo $template->render(array(
-	'titre' => 'Twig page'
+	'titre' => 'Twig page','bootstrap'=>'ok'
     ));
 ?>

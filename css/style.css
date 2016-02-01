@@ -1,0 +1,17 @@
+html, body {
+	height: 100%;
+}
+
+.blue {
+	color: blue;
+}
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+.fondGeneral{
+	background-color: #CED2FF;
+	height: 100%;
+}

@@ -10,19 +10,10 @@
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		{% endif %}
+		<link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        <h2>Page de test</h2>
-        
-        <p>
-            Cette page contient du code HTML avec des balises PHP.<br />
-            Voici quelques petits tests :
-        </p>
-        
-        <ul>
-        <li style="color: blue;">Texte en bleu et deux éé</li>
-        <li style="color: red;">Texte en rouge</li>
-        <li style="color: green;">Texte en vert</li>
-        </ul>
+<body>
+{% block body %}
+{% endblock %}
 </body>
 </html>
