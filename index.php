@@ -8,6 +8,7 @@ $twig = new Twig_Environment($loader, array(
 $template = $twig->loadTemplate('pageBootstrap.twig.html');
 if (isset($_GET['message'])){
 	$message = $_GET['message'];
+	echo $_GET['message'];
 } else {
 	$message = 'Hello world';
 }
