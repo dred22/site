@@ -15,4 +15,5 @@ if (isset($_GET['message'])){
 echo $template->render(array(
 	'titre' => 'Twig page','bootstrap'=>'ok', 'message'=>$message
     ));
+	//commentaire master
 ?>
