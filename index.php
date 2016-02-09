@@ -16,4 +16,5 @@ echo $template->render(array(
 	'titre' => 'Twig page','bootstrap'=>'ok', 'message'=>$message
     ));
 	//kadiev
+	//commentaire master
 ?>
